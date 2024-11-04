@@ -5,11 +5,7 @@ const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click',() =>{
-    // Enter your API Key in the APIKey variable
-    // You can use any weather api for the project
-    // Here we are using openweathermap's API which
-    // you can find in their website by searching 
-    // weather API.
+  
     const APIKey = '90a8ff92bc7c92c32b2b76ffb3b076e5';
     const city = document.getElementById('search-btn').value;
     if(city==''){
