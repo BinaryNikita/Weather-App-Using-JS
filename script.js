@@ -35,25 +35,25 @@ search.addEventListener('click',() =>{
 
         switch(json.weather[0].main){
             case 'Clear':
-                image.src = 'images/clear-new.png';
+                image.src = 'https://media.istockphoto.com/id/1007768414/photo/blue-sky-with-bright-sun-and-clouds.jpg?s=612x612&w=0&k=20&c=MGd2-v42lNF7Ie6TtsYoKnohdCfOPFSPQt5XOz4uOy4=';
                 break;
             case 'Rain':
-                image.src = 'images/rain-new.png';
+                image.src = 'https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=-new.png';
                 break;
             case 'Snow':
-                image.src = 'images/snow-new.png';
+                image.src = 'https://media.istockphoto.com/id/863513024/photo/winter-scene-snowfall-on-the-blurred-background.jpg?s=612x612&w=0&k=20&c=piIhc2R6dExYQ5X_7CnpPhJk8rCB7itK-PQ0pgsCai4=';
                 break;
             case 'Clouds':
-                image.src = 'images/cloud-new.png';
+                image.src = 'https://media.istockphoto.com/id/962500712/video/4k-tl-cloudy-sky-with-sun-rays.jpg?s=640x640&k=20&c=XQrz-Y4FIzovVlayePLhPZpHoM8-iLN7gZ_uSdnoe-8=';
                 break; 
             case 'Mist':
-                image.src = 'images/mist-new.png';
+                image.src = 'https://media.istockphoto.com/id/1195458582/photo/aerial-view-of-misty-mountains-at-sunrise.jpg?s=612x612&w=0&k=20&c=UQ4ZHZk0H_c75Vy9Wv5VaXn00obvPT98LMTOvjXZOWc=-new.png';
                 break;                  
             case 'Haze':
-                image.src = 'images/mist-new.png';
+                image.src = 'https://media.istockphoto.com/id/57423616/photo/woman-walking-through-park.jpg?s=612x612&w=0&k=20&c=HR-DK8jMricqFtYXAVejJXTpqv6ZVhxeO87Fh2oIo-A=';
                 break;     
             default:
-                image.src = 'images/clear-new.png';
+                image.src = 'https://media.istockphoto.com/id/182175143/photo/photo-of-some-white-whispy-clouds-and-blue-sky-cloudscape.jpg?s=612x612&w=0&k=20&c=4pM1uET260cVlZooulBBBjST9Cx-uzKwBNNYyn3AN_k=';
         }
         temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
         description.innerHTML = `${json.weather[0].description}`;
